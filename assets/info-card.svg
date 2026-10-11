@@ -68,7 +68,7 @@
       <text x="25" y="146" class="info-label">FOCUS</text>
       <text x="110" y="146" class="info-colon">:</text>
       
-      <text x="135" y="146" class="info-value" style="fill: #e6edf3; ">Revenue Automation & AI Workflows</text>
+      <text x="135" y="146" class="info-value" style="fill: #e6edf3; ">Revenue Automation &amp; AI Workflows</text>
     </g>
     <g class="info-line" style="animation-delay: 0.52s">
       <text x="25" y="173" class="info-label">BUILDING</text>
@@ -104,7 +104,7 @@
       <text x="25" y="308" class="info-label">STATUS</text>
       <text x="110" y="308" class="info-colon">:</text>
       <circle cx="125" cy="304" r="3.5" fill="#39d353" class="status-pulse" />
-      <text x="139" y="308" class="info-value" style="fill: #39d353; ">Available for GTM & RevOps Eng Roles</text>
+      <text x="139" y="308" class="info-value" style="fill: #39d353; ">Available for GTM &amp; RevOps Eng Roles</text>
     </g>
 
   <!-- Terminal Cursor -->
