@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 360" width="490" height="360">
+  <style>
+    .card-bg { fill: #0d1117; stroke: #30363d; stroke-width: 1px; rx: 12px; }
+    .header-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 12px; fill: #58a6ff; font-weight: 600; }
+    .info-label { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 11.5px; fill: #8b949e; font-weight: 500; }
+    .info-colon { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 11.5px; fill: #6e7681; }
+    .info-value { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 11.5px; }
+    .btn-red { fill: #ff5f56; }
+    .btn-yellow { fill: #ffbd2e; }
+    .btn-green { fill: #27c93f; }
+
+    @keyframes fadeInLine {
+      0% { opacity: 0; transform: translateY(5px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .info-line {
+      opacity: 0;
+      animation: fadeInLine 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .status-pulse { animation: pulse 2s infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .info-line { opacity: 1 !important; animation: none !important; }
+      .status-pulse { animation: none !important; }
+    }
+  </style>
+
+  <!-- Card Background -->
+  <rect x="0.5" y="0.5" width="489" height="359" class="card-bg" />
+
+  <!-- Terminal Window Dots -->
+  <circle cx="20" cy="18" r="4.5" class="btn-red" />
+  <circle cx="35" cy="18" r="4.5" class="btn-yellow" />
+  <circle cx="50" cy="18" r="4.5" class="btn-green" />
+
+  <!-- Prompt Title -->
+  <text x="75" y="22" class="header-text">yatin@gtm:~$ neofetch --gtm-profile</text>
+
+  <!-- Horizontal divider -->
+  <line x1="15" y1="36" x2="475" y2="36" stroke="#21262d" stroke-width="1" />
+
+  <!-- Info Rows -->
+  <g class="info-line" style="animation-delay: 0.20s">
+      <text x="25" y="65" class="info-label">OS</text>
+      <text x="110" y="65" class="info-colon">:</text>
+      
+      <text x="135" y="65" class="info-value" style="fill: #39d353; ">GTM-Linux x86_64</text>
+    </g>
+    <g class="info-line" style="animation-delay: 0.28s">
+      <text x="25" y="92" class="info-label">HOST</text>
+      <text x="110" y="92" class="info-colon">:</text>
+      
+      <text x="135" y="92" class="info-value" style="fill: #e6edf3; ">Haldwani, Uttarakhand, India</text>
+    </g>
+    <g class="info-line" style="animation-delay: 0.36s">
+      <text x="25" y="119" class="info-label">ROLE</text>
+      <text x="110" y="119" class="info-colon">:</text>
+      
+      <text x="135" y="119" class="info-value" style="fill: #58a6ff; font-weight: 600;">Entry-Level GTM Engineer</text>
+    </g>
+    <g class="info-line" style="animation-delay: 0.44s">
+      <text x="25" y="146" class="info-label">FOCUS</text>
+      <text x="110" y="146" class="info-colon">:</text>
+      
+      <text x="135" y="146" class="info-value" style="fill: #e6edf3; ">Revenue Automation & AI Workflows</text>
+    </g>
+    <g class="info-line" style="animation-delay: 0.52s">
+      <text x="25" y="173" class="info-label">BUILDING</text>
+      <text x="110" y="173" class="info-colon">:</text>
+      
+      <text x="135" y="173" class="info-value" style="fill: #f0883e; ">Revenue Lifecycle Orchestration Engine</text>
+    </g>
+    <g class="info-line" style="animation-delay: 0.60s">
+      <text x="25" y="200" class="info-label">STACK</text>
+      <text x="110" y="200" class="info-colon">:</text>
+      
+      <text x="135" y="200" class="info-value" style="fill: #e6edf3; ">n8n • Supabase • Clay • HubSpot • JS</text>
+    </g>
+    <g class="info-line" style="animation-delay: 0.68s">
+      <text x="25" y="227" class="info-label">CONCEPTS</text>
+      <text x="110" y="227" class="info-colon">:</text>
+      
+      <text x="135" y="227" class="info-value" style="fill: #e6edf3; ">ICP Scoring • Webhooks • Deduplication</text>
+    </g>
+    <g class="info-line" style="animation-delay: 0.76s">
+      <text x="25" y="254" class="info-label">TELEMETRY</text>
+      <text x="110" y="254" class="info-colon">:</text>
+      
+      <text x="135" y="254" class="info-value" style="fill: #e6edf3; ">Gated LLM • Error Logging • Sync Status</text>
+    </g>
+    <g class="info-line" style="animation-delay: 0.84s">
+      <text x="25" y="281" class="info-label">MINDSET</text>
+      <text x="110" y="281" class="info-colon">:</text>
+      
+      <text x="135" y="281" class="info-value" style="fill: #7ee787; ">Business Problems → Technical Systems</text>
+    </g>
+    <g class="info-line" style="animation-delay: 0.92s">
+      <text x="25" y="308" class="info-label">STATUS</text>
+      <text x="110" y="308" class="info-colon">:</text>
+      <circle cx="125" cy="304" r="3.5" fill="#39d353" class="status-pulse" />
+      <text x="139" y="308" class="info-value" style="fill: #39d353; ">Available for GTM & RevOps Eng Roles</text>
+    </g>
+
+  <!-- Terminal Cursor -->
+  <g transform="translate(25, 337)">
+    <text x="0" y="0" class="header-text" style="fill: #39d353;">yatin@gtm:~$</text>
+    <rect x="95" y="-10" width="7" height="12" fill="#58a6ff" class="status-pulse" />
+  </g>
+</svg>
