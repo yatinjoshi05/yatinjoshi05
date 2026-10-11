@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 360" width="370" height="360">
+  <style>
+    .terminal-bg { fill: #0d1117; stroke: #30363d; stroke-width: 1px; rx: 12px; }
+    .header-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 12px; fill: #58a6ff; font-weight: 600; }
+    .ascii-text {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 6.8px;
+      letter-spacing: 0.1px;
+      fill: #e6edf3;
+      white-space: pre;
+    }
+    .btn-red { fill: #ff5f56; }
+    .btn-yellow { fill: #ffbd2e; }
+    .btn-green { fill: #27c93f; }
+
+    @keyframes printRow {
+      0% { opacity: 0; clip-path: inset(0 100% 0 0); }
+      100% { opacity: 1; clip-path: inset(0 0 0 0); }
+    }
+
+    .ascii-row {
+      opacity: 0;
+      animation: printRow 0.12s steps(10, end) forwards;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ascii-row { opacity: 1 !important; clip-path: none !important; animation: none !important; }
+    }
+  </style>
+
+  <!-- Terminal Window Background -->
+  <rect x="0.5" y="0.5" width="369" height="359" class="terminal-bg" />
+
+  <!-- Window Dots -->
+  <circle cx="20" cy="18" r="4.5" class="btn-red" />
+  <circle cx="35" cy="18" r="4.5" class="btn-yellow" />
+  <circle cx="50" cy="18" r="4.5" class="btn-green" />
+
+  <!-- Shell Prompt Header -->
+  <text x="75" y="22" class="header-text">yatin@gtm:~$ ./portrait.sh</text>
+
+  <!-- Divider -->
+  <line x1="15" y1="36" x2="355" y2="36" stroke="#21262d" stroke-width="1" />
+
+  <!-- ASCII Art Rows -->
+  <g id="ascii-canvas">
+    <g class="ascii-row" style="animation-delay: 0.050s">
+      <text x="20" y="54.0" class="ascii-text" xml:space="preserve">                                                                    </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.090s">
+      <text x="20" y="60.8" class="ascii-text" xml:space="preserve">                                                                    </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.130s">
+      <text x="20" y="67.6" class="ascii-text" xml:space="preserve">                                                                    </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.170s">
+      <text x="20" y="74.4" class="ascii-text" xml:space="preserve">                           ..`:--==--=-:`....:-:``.                 </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.210s">
+      <text x="20" y="81.2" class="ascii-text" xml:space="preserve">                        `-*ss#ssss#######ssss###%%sc=`              </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.250s">
+      <text x="20" y="88.0" class="ascii-text" xml:space="preserve">                     :*cs#%%#s####%%%%%#%%%%%@%%%@%###s+`           </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.290s">
+      <text x="20" y="94.8" class="ascii-text" xml:space="preserve">                 `:-+sss##s#%@%@@@@@@%@@%@@%#@@@%@@%%%@%s*:         </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.330s">
+      <text x="20" y="101.6" class="ascii-text" xml:space="preserve">                *s#%%##@%@@@%@@@@@@@@@@@@@@@@@@%%@@@@@%#ss#.        </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.370s">
+      <text x="20" y="108.4" class="ascii-text" xml:space="preserve">               .c#%@%@@@@@@@@@@@@@%%%%%%%%%%%%%%@@@@@%%%%%c         </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.410s">
+      <text x="20" y="115.2" class="ascii-text" xml:space="preserve">               .*#%%@@@@@@@%##sc**=-====+++++===*cs%%%%s*-          </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.450s">
+      <text x="20" y="122.0" class="ascii-text" xml:space="preserve">                `*#%%%@@@@#+--:::`````````````````:-s%#+.           </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.490s">
+      <text x="20" y="128.8" class="ascii-text" xml:space="preserve">                 `#%%%%%%#*-::::::::::::```````````.`*##:           </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.530s">
+      <text x="20" y="135.6" class="ascii-text" xml:space="preserve">                  s###ss#c+------:::````````````````.:c*            </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.570s">
+      <text x="20" y="142.4" class="ascii-text" xml:space="preserve">                  cccc*+=------:```.``..```````.....``-:            </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.610s">
+      <text x="20" y="149.2" class="ascii-text" xml:space="preserve">                  ***c=:::-::``:-===+==-::`::----::````.            </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.650s">
+      <text x="20" y="156.0" class="ascii-text" xml:space="preserve">                ..+***-`:::::-=+*cc##sc*+=--=*cssc*=:``.            </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.690s">
+      <text x="20" y="162.8" class="ascii-text" xml:space="preserve">               **===*+``::-=+*cccsscc##s+-:-css#s***=-``.           </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.730s">
+      <text x="20" y="169.6" class="ascii-text" xml:space="preserve">              .c+=*+==``:::-=+***cs**ss*-`.`=*ccc+==-:`:.           </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.770s">
+      <text x="20" y="176.4" class="ascii-text" xml:space="preserve">               -=*ss==:::``````:::-::---:....`::::``..``            </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.810s">
+      <text x="20" y="183.2" class="ascii-text" xml:space="preserve">                ===+==-::::::``````:=-::```. .:=:`....`.            </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.850s">
+      <text x="20" y="190.0" class="ascii-text" xml:space="preserve">                 -:-=*=::----:----=*c++*c*+++-`+*+=-:``             </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.890s">
+      <text x="20" y="196.8" class="ascii-text" xml:space="preserve">                  `-:=c=----=====*sccs%%%#s#ss**ss*=---.            </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.930s">
+      <text x="20" y="203.6" class="ascii-text" xml:space="preserve">                      *c**+++===*%%%#c**++=--+ss%%*-=+*.            </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 0.970s">
+      <text x="20" y="210.4" class="ascii-text" xml:space="preserve">                      -#ss###sc+*s***+==-````:-:+*-+cs+             </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.010s">
+      <text x="20" y="217.2" class="ascii-text" xml:space="preserve">                       c%%%%%%#s*c*==+*c***+==::*cc#%c              </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.050s">
+      <text x="20" y="224.0" class="ascii-text" xml:space="preserve">                       -c%@@@%%%%%#c*++*++*+--=c###@s               </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.090s">
+      <text x="20" y="230.8" class="ascii-text" xml:space="preserve">                      `:-+s%@@@@@@%##s*++====*s#%#s-                </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.130s">
+      <text x="20" y="237.6" class="ascii-text" xml:space="preserve">                  =c#@@=-=+*s%@@@@%%%%%######%%%%#s-                </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.170s">
+      <text x="20" y="244.4" class="ascii-text" xml:space="preserve">                .c%@@#+:-=++**cs#%@@@@@@@@@@@%#c--@@s:              </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.210s">
+      <text x="20" y="251.2" class="ascii-text" xml:space="preserve">             :=+s##%s=---==+++++**css###sssc+=-:`:%%##+`            </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.250s">
+      <text x="20" y="258.0" class="ascii-text" xml:space="preserve">        .:=*s#####%%#*+---==++++++******+=--::::``c@%##sc+:.        </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.290s">
+      <text x="20" y="264.8" class="ascii-text" xml:space="preserve">    .:+s%%%%#####%%%%%s+====+++++++***++=-:::::``:s@%##s####sc+=`   </text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.330s">
+      <text x="20" y="271.6" class="ascii-text" xml:space="preserve"> :*cs%@@%#%%##%%%%%%%%%#c*+***++++**++==-:::::::-+%@%#s#####%##%%#c=</text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.370s">
+      <text x="20" y="278.4" class="ascii-text" xml:space="preserve"> =##%%%%#%@%%%###%%%%%%%%#sc*c**+++++===--------*#%%#####%@#%%#s#%%#</text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.410s">
+      <text x="20" y="285.2" class="ascii-text" xml:space="preserve"> =%%%%%##%%%%%%%#%%%%%%%%%%#*+=+++===-----::::-c#%%#####%%%%#%%#s#%s</text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.450s">
+      <text x="20" y="292.0" class="ascii-text" xml:space="preserve"> +@%%%%#%%%%%%@%%%#%%%%%%%%%%s*-:::::::``:``:+s%%#######%%%###%%##%s</text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.490s">
+      <text x="20" y="298.8" class="ascii-text" xml:space="preserve"> +@#%%#%%%%%%%@@@@@@@@@@@@@@@%%#*-``````::-+#%%#%%%@@@%%@%%####%%%#s</text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.530s">
+      <text x="20" y="305.6" class="ascii-text" xml:space="preserve"> +%%%%#%%%%%%%%%%%@@@@@@@@@@@@@@@%s+:``::+s%%%@%%@@@%@%%%%######%%%s</text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.570s">
+      <text x="20" y="312.4" class="ascii-text" xml:space="preserve"> +@%%#%%%%####%%%%%%%%%%%@@@@@@@@@@@%c+=c%@%@@@%%%%%%%%%#########%@#</text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.610s">
+      <text x="20" y="319.2" class="ascii-text" xml:space="preserve"> +@%#%%%%####%###%%%%%%%%%%%%%%%%@@@@@@#%%%@@%%%%%%%%#%###########%#</text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.650s">
+      <text x="20" y="326.0" class="ascii-text" xml:space="preserve"> *@##%%%##########%%%%%%%%%%%%%%%%%%%%##%%%%%%%%%%%##%%############s</text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.690s">
+      <text x="20" y="332.8" class="ascii-text" xml:space="preserve"> +%#%%####################%%%%%%%%%%@%c*#%%%%#%%%##################s</text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.730s">
+      <text x="20" y="339.6" class="ascii-text" xml:space="preserve"> *@%%%@@@%%%%%%%%%%%%%%%%%%@@@@@@@@@@@@@%%%@@@@@%%%%%%%%%%%%%%%%%%%s</text>
+    </g>
+    <g class="ascii-row" style="animation-delay: 1.770s">
+      <text x="20" y="346.4" class="ascii-text" xml:space="preserve"> `=--------------------------------==------------------------------:</text>
+    </g>
+  </g>
+</svg>
