@@ -93,6 +93,7 @@ A modular personal AI workstation prototype built with a desktop shell:
 ┌────────────────────────────────────────────────────────────────────────┐
 │  GitHub    : https://github.com/yatinjoshi05                           │
 │  LinkedIn  : https://www.linkedin.com/in/yatin-joshi-86a814363/        │
+|   Portfolio : https://portfolio-yatin-portfolio1.vercel.app             |
 │  Email     : yatinjoshi972@gmail.com                                   │
 │  Location  : Haldwani, Uttarakhand, India                              │
 │  Status    : Open for Entry-Level GTM Engineering & RevOps Roles       │
